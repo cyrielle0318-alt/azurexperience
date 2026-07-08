@@ -1,0 +1,325 @@
+<!DOCTYPE html><html class="dark" lang="fr"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@200;300;400;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-fixed-dim": "#bdc7dc",
+              "inverse-on-surface": "#283044",
+              "on-secondary-fixed": "#121c2c",
+              "on-tertiary-fixed-variant": "#5d4201",
+              "tertiary-fixed-dim": "#e9c176",
+              "on-error": "#690005",
+              "on-tertiary": "#412d00",
+              "on-secondary-fixed-variant": "#3d4759",
+              "surface-variant": "#2d3449",
+              "surface-dim": "#0b1326",
+              "on-primary": "#133057",
+              "primary-container": "#001938",
+              "background": "#0b1326",
+              "tertiary-fixed": "#ffdea5",
+              "on-background": "#dae2fd",
+              "outline": "#8f9097",
+              "primary": "#adc7f7",
+              "surface-tint": "#adc7f7",
+              "inverse-surface": "#dae2fd",
+              "tertiary": "#e9c176",
+              "inverse-primary": "#455f88",
+              "secondary-container": "#3d4759",
+              "surface-bright": "#31394d",
+              "on-primary-container": "#6983ae",
+              "surface": "#0b1326",
+              "on-tertiary-fixed": "#261900",
+              "secondary-fixed": "#d9e3f9",
+              "outline-variant": "#44474d",
+              "on-secondary": "#273141",
+              "secondary": "#bdc7dc",
+              "on-surface": "#dae2fd",
+              "on-tertiary-container": "#9e7d3a",
+              "on-secondary-container": "#abb5cb",
+              "primary-fixed": "#d6e3ff",
+              "surface-container-highest": "#2d3449",
+              "error": "#ffb4ab",
+              "primary-fixed-dim": "#adc7f7",
+              "surface-container-lowest": "#060e20",
+              "error-container": "#93000a",
+              "surface-container-high": "#222a3d",
+              "on-primary-fixed-variant": "#2d476f",
+              "surface-container": "#171f33",
+              "on-primary-fixed": "#001b3c",
+              "on-surface-variant": "#c5c6cd",
+              "tertiary-container": "#231700",
+              "surface-container-low": "#131b2e",
+              "on-error-container": "#ffdad6"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-card {
+        backdrop-filter: blur(24px);
+        background: rgba(23, 31, 51, 0.6);
+      }
+      .editorial-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+      }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary/30">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-[#0b1326]/60 backdrop-blur-xl shadow-[0_40px_80px_-20px_rgba(6,14,32,0.06)]">
+<div class="flex justify-between items-center px-12 py-6 w-full max-w-[1440px] mx-auto">
+<div class="text-2xl font-serif tracking-tighter text-[#e9c176]">Azur Exprerience</div>
+<div class="hidden md:flex space-x-10 font-['Noto_Serif'] tracking-wide uppercase text-sm">
+<a class="text-[#adc7f7] border-b border-[#adc7f7] pb-1" href="#">Dashboard</a>
+<a class="text-slate-400 hover:text-[#adc7f7] transition-colors" href="#">Services</a>
+<a class="text-slate-400 hover:text-[#adc7f7] transition-colors" href="#">Partners</a>
+<a class="text-slate-400 hover:text-[#adc7f7] transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center space-x-6">
+<span class="material-symbols-outlined text-[#adc7f7] cursor-pointer" data-icon="notifications">notifications</span>
+<span class="material-symbols-outlined text-[#adc7f7] cursor-pointer" data-icon="account_circle">account_circle</span>
+<button class="bg-gradient-to-r from-primary to-on-primary-container text-on-primary px-6 py-2 rounded-md font-label font-bold text-xs uppercase tracking-widest scale-95 active:scale-90 transition-transform">
+                    Book Now
+                </button>
+</div>
+</div>
+<div class="bg-gradient-to-b from-[#171f33] to-transparent h-px w-full absolute bottom-0"></div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-40" data-alt="Luxurious white villa exterior on the French Riviera overlooking a turquoise Mediterranean sea at dusk with warm golden lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByqmWPl_pjqAyJdwMWt3QVqjwgicD14nMrh-osHgscytHMNEC0daT7VUHm2LdVcl_70M7WiW0XqLzSMRhn20aWAP0V7Ic_P-2-ZFvYtOMXgclcdzRbuFl-kRs8ETbPSTdBdxfzS6UdYzkZCsH47yDPQjhWYfUxAdqEaIqiQ7EoL-xHtfIozv9A0qdRV040oH3uIJFSdra-CIAiL2aRbwx-t8Vq5sxZBDi2hlMHB-VPOl7kqtVsh83COmScd2RkCM5dE6xszU5IEx8">
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent"></div>
+</div>
+<div class="container mx-auto px-12 z-10">
+<div class="max-w-3xl">
+<h1 class="font-headline text-6xl md:text-8xl text-on-background mb-8 leading-[1.1] tracking-tight">
+                        Maximisez vos <br>
+<span class="text-tertiary italic">revenus locatifs</span> <br>
+                        sans le stress
+                    </h1>
+<div class="flex space-x-6 mt-12">
+<button class="bg-gradient-to-br from-primary to-on-primary-container text-on-primary px-10 py-4 rounded-md font-label font-bold uppercase tracking-widest shadow-xl transition-all hover:brightness-110">
+                            Estimer mes revenus
+                        </button>
+<button class="bg-transparent border border-outline-variant/30 backdrop-blur-md text-on-background px-10 py-4 rounded-md font-label font-bold uppercase tracking-widest hover:bg-white/5 transition-all">
+                            Découvrir nos services
+                        </button>
+</div>
+</div>
+</div>
+<!-- Side Floating Card (Asymmetry) -->
+<div class="hidden lg:block absolute right-24 top-1/2 -translate-y-1/2 w-80">
+<div class="glass-card p-8 rounded-xl border border-white/5 shadow-2xl">
+<div class="flex items-center space-x-4 mb-6">
+<div class="w-12 h-12 rounded-full bg-tertiary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary" data-icon="star" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<div>
+<p class="text-xs uppercase tracking-widest text-on-surface-variant font-bold">Conciergerie Elite</p>
+<p class="font-headline text-lg">Signature Riviera</p>
+</div>
+</div>
+<p class="text-sm leading-relaxed text-on-surface-variant">
+                        Nous gérons chaque détail de vos propriétés avec la précision d'un palace.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Multi-platform expertise -->
+<section class="py-20 bg-surface-container-lowest">
+<div class="container mx-auto px-12">
+<p class="text-center font-label text-xs uppercase tracking-[0.4em] text-outline mb-12">Expertise multi-plateformes</p>
+<div class="flex flex-wrap justify-center items-center gap-16 grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-700">
+<img alt="Airbnb" class="h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDH7DKxoIcCf8aqhjy0sOFdgOIYi3MrbUgykxJNE4JwQfBL9rw8kURi5sHxm31h0nDLQ8XqxdUu-ai8XrCmIarmMaY3Lm1UKtw05LiflStkgqOzUkAQVS_04ACGnIY1HO-W6HvkmDkWwHO1IbWesvWQcnw2jEF4jM1HyG3gYPHVS7Ym_UJX6AiF-FGK77MIKVlxi-JczvvIbjFg_jJFZF1Dx7Lh8dpfGso8Fu9eb4BdXO0OWDo83uvtEU947zGVLcQ_QEs4oebQE5Q">
+<img alt="Booking.com" class="h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEpCyg95B8HRD6ZLcCPjLhP55SfQ_6tDLPamdCMi95nGBChqVYTfW7YLHbqlSoaRQMqcwp5gnpEwAmrWbNaEwM9jDZQA0eN88o2xrqmyjftu86WElnlOgS_iOZpDsWaR7yaMoCrYugd1If1sTZRkdLbcH5lsOpSKUD6wamotpvT-Btm_xfVS1lOhoWbxJOA99jYY1yxL_QbnzbbgJuQBXw9xzBX6nmj3sgu_sQVcO4QKv3nShNIIEjvHyeLEYkg_sNqLGURl_qRGk">
+<img alt="Expedia" class="h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiG0hKY9Su3845L3qVBGqXCE52o35Az2zWO7BlcK92ZH5FPvt4EnPueoQ7zWxr_06m69HOY3daVK7rMEK16NCK_r05Np8-2J4ixXIXSlCzup4exseQyERD0GdGPKp3i4CiwpC5GgR_-17e3VA-OHXue1uKCg3gTTlV_8f4ieoM9NWZfor8vwp7Zbw3ORxx1xcFWo7Kn7ofDl-vp5a_cOMp4w7NL9EspJu9bFwa-KnFAMiHuao_9YEz1gPCEC8mFUQfdfKxS0GCsGY">
+<img alt="TripAdvisor" class="h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8qoPMW_yl73w2FBvfWSHzChOsUBOA-kBVOcU1XGPBgcQ2Ynz_KPd3n6GmTA9QaZG2lF7XdFCThV9GmkH8vVMyC8n8LJ3QHIrJrQlU0qwUi5ioND6mQ3OMAmNScXBWVv59f737YGxxVwOkOA1Y-9Peud46jyL0GJYTr-C2sv1E5mAH4kowO-vG1Ehcav5dJ5DoydofAQJajJOBqqREVtraqlQ7giQvprcZsp70lwDSQWXN1St7EdpongB-TYHgbW_kCwkLE-sFVtM">
+<img alt="Vrbo" class="h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9zF50N3SjjkdY6ROcUOOCPP2I3-182JBMcaOEgMHGsu5MKqxJp0uMFz-N36NP8TCQ6tyVptUdbC1si6KKij-UMNeyBlVmxdJbz4mD4sXpeoacflNt2_Z2Dr9T6ttcNYOYywp4I7XrMx7dAkcpyCNj92l_li1m-k-sXHwMNcJzVIClU_Fn26sHcU8y8BsxR7YswsyHVRSMLTtcScGkT4ku3mrgZVQWuhaQ7vLavlrM1s1Vlui6UxSTeiqGHYVCQUpZrwv-lPT8ABA">
+</div>
+</div>
+</section>
+<!-- Performance Stats (Bento-ish Layout) -->
+<section class="py-32 px-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-[1440px] mx-auto">
+<div class="bg-surface-container p-12 rounded-xl border border-white/5 group hover:bg-surface-container-high transition-colors">
+<div class="text-primary mb-4">
+<span class="material-symbols-outlined text-4xl" data-icon="analytics">analytics</span>
+</div>
+<p class="text-5xl font-headline font-bold text-on-background mb-2">92%</p>
+<p class="text-sm font-label uppercase tracking-widest text-on-surface-variant">Taux d'occupation</p>
+</div>
+<div class="bg-surface-container p-12 rounded-xl border border-white/5 group hover:bg-surface-container-high transition-colors">
+<div class="text-tertiary mb-4">
+<span class="material-symbols-outlined text-4xl" data-icon="workspace_premium" style="font-variation-settings: &quot;FILL&quot; 1;">workspace_premium</span>
+</div>
+<p class="text-5xl font-headline font-bold text-on-background mb-2">100%</p>
+<p class="text-sm font-label uppercase tracking-widest text-on-surface-variant">Superhosts</p>
+</div>
+<div class="bg-surface-container p-12 rounded-xl border border-white/5 group hover:bg-surface-container-high transition-colors">
+<div class="text-primary mb-4">
+<span class="material-symbols-outlined text-4xl" data-icon="groups">groups</span>
+</div>
+<p class="text-5xl font-headline font-bold text-on-background mb-2">50+</p>
+<p class="text-sm font-label uppercase tracking-widest text-on-surface-variant">Propriétaires heureux</p>
+</div>
+<div class="bg-surface-container p-12 rounded-xl border border-white/5 group hover:bg-surface-container-high transition-colors">
+<div class="text-tertiary mb-4">
+<span class="material-symbols-outlined text-4xl" data-icon="trending_up">trending_up</span>
+</div>
+<p class="text-5xl font-headline font-bold text-on-background mb-2">+30%</p>
+<p class="text-sm font-label uppercase tracking-widest text-on-surface-variant">Revenus moyens</p>
+</div>
+</div>
+</section>
+<!-- Key Services Cards -->
+<section class="py-32 bg-surface-container-low">
+<div class="container mx-auto px-12">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div class="max-w-xl">
+<h2 class="font-headline text-5xl mb-6">L'art de recevoir <span class="italic text-tertiary">Signature</span></h2>
+<p class="text-on-surface-variant text-lg font-light leading-relaxed">Une gestion intégrale de vos biens, de la première photo au départ des voyageurs, garantissant une satisfaction inégalée.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Service 1 -->
+<div class="relative group h-[500px] rounded-2xl overflow-hidden border border-white/5 shadow-2xl">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Modern high-end luxury apartment interior with floor-to-ceiling windows and minimalist white furniture overlooking the ocean" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS0KJgN5TVoqk_yYMxj7xHM3Ajvv3YlTRQLc9EAM05IpRN2FKzx83NgxXydfcyw3ahaxo2VFzpsY-8JFbpM3oO_uAcciMJKvhCmvvnXjbJlNMrfC1T2pHt0TH73gIGaleqscj79hfxof9HaMF6Xjs0_3TuFqKbUS8kNeE_VHjwy2TtYdipmFU7oWAh_Vd6Fr2ZuqN6U4oMv20_hFyPy1tG8PpvgFtOxSffG-4Osg0AwWU6xDap_dv_5Kyjh11qplulvAEATrYpDwQ">
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full glass-card border-t border-white/10">
+<span class="material-symbols-outlined text-tertiary text-3xl mb-4 block" data-icon="key">key</span>
+<h3 class="font-headline text-2xl mb-2">Arrivées et départs</h3>
+<p class="text-on-surface-variant text-sm font-light">Un accueil personnalisé pour chaque voyageur avec un service de conciergerie multilingue.</p>
+</div>
+</div>
+<!-- Service 2 -->
+<div class="relative group h-[500px] rounded-2xl overflow-hidden border border-white/5 shadow-2xl md:mt-12">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close up of crisp white hotel-grade linen on a plush king-size bed in a sunlit luxury suite" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe3ABxyxhdz0ixQZO-mk-U5gK1S1niODh2jkDzrgGjNegJbLvlEnenef6-aLu7XTw0hKxk12US5duVRSxX8_jX1Bv9jnNPfuXjUEMZQ8Ix-8bjr1dnK8DEMccLezt904KjH8e1tZ7io0uDMqN6GUJtOlRCdLiwT33y4RWObzqtoEx3jTs6Nt24w9yreJS9xPeZvDp304ddaBe6uqj0lWUG7mpzYqNPzRe4HRLzyGFi3HL8K3UdqVOIh8FCzSej0DXUUR7LpYMk35s">
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full glass-card border-t border-white/10">
+<span class="material-symbols-outlined text-tertiary text-3xl mb-4 block" data-icon="sanitizer">sanitizer</span>
+<h3 class="font-headline text-2xl mb-2">Ménage professionnel</h3>
+<p class="text-on-surface-variant text-sm font-light">Des standards de propreté hôteliers cinq étoiles avec linge de maison premium fourni.</p>
+</div>
+</div>
+<!-- Service 3 -->
+<div class="relative group h-[500px] rounded-2xl overflow-hidden border border-white/5 shadow-2xl">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Digital tablet screen showing professional real estate analytics and graphs on a dark marble table with a gold pen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnZIBH7jZzII47IS71bkm-utxGJmF__Rb8ezMoCXkHN2OtGfDU940qZ3cbRfk_vhXeUsqIYOj7HcSDfR-HdCReuZ3M8Aw5v8IyD61H3oM7Bbhm-n8-7CE7VxNfTGV8Q9o1mOXi2QBe8NqABjixSzIAcMwHakjX7e9WXfQM0WnTvCsJHDvxXbbU3T7DetmxsCvEE5cb3Gdv2duDUjUWX8QWJskzTBFiySzKJV7FBUE-X0mIOBGLmAbZsqe2juKnXI8DLJoQ8s5Mp8U">
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full glass-card border-t border-white/10">
+<span class="material-symbols-outlined text-tertiary text-3xl mb-4 block" data-icon="monitoring">monitoring</span>
+<h3 class="font-headline text-2xl mb-2">Optimisation revenus</h3>
+<p class="text-on-surface-variant text-sm font-light">Algorithmes de tarification dynamique pour maximiser vos profits chaque jour de l'année.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-32">
+<div class="container mx-auto px-12">
+<div class="text-center mb-24">
+<h2 class="font-headline text-5xl">Ce que disent nos propriétaires</h2>
+</div>
+<div class="flex flex-col md:flex-row gap-12 max-w-5xl mx-auto">
+<div class="flex-1 bg-surface-container-high p-12 rounded-xl relative italic font-light leading-relaxed">
+<span class="material-symbols-outlined absolute -top-4 left-8 text-5xl text-tertiary/20" data-icon="format_quote">format_quote</span>
+                        "Grâce à Signature Riviera, mes revenus ont augmenté de 40% en un an. Je n'ai plus à me soucier des arrivées tardives ou du ménage. Une tranquillité d'esprit totale."
+                        <div class="mt-8 flex items-center space-x-4 not-italic">
+<div class="w-10 h-10 rounded-full bg-surface-container"></div>
+<div>
+<p class="text-sm font-bold">Jean-Pierre M.</p>
+<p class="text-xs text-on-surface-variant">Propriétaire à Cannes</p>
+</div>
+</div>
+</div>
+<div class="flex-1 bg-surface-container-high p-12 rounded-xl relative italic font-light leading-relaxed md:mt-12">
+<span class="material-symbols-outlined absolute -top-4 left-8 text-5xl text-tertiary/20" data-icon="format_quote">format_quote</span>
+                        "Leur professionnalisme est exemplaire. Les retours de mes voyageurs sont dithyrambiques sur la qualité de l'accueil. Une collaboration précieuse."
+                        <div class="mt-8 flex items-center space-x-4 not-italic">
+<div class="w-10 h-10 rounded-full bg-surface-container"></div>
+<div>
+<p class="text-sm font-bold">Sophie L.</p>
+<p class="text-xs text-on-surface-variant">Propriétaire à Nice</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-32 px-12 relative overflow-hidden">
+<div class="absolute inset-0 bg-primary-container/20"></div>
+<div class="max-w-4xl mx-auto text-center relative z-10">
+<h2 class="font-headline text-6xl mb-12 leading-tight">Prêt à libérer votre temps ?</h2>
+<div class="flex flex-col md:flex-row justify-center items-center gap-8">
+<button class="w-full md:w-auto bg-tertiary text-on-tertiary px-12 py-5 rounded-md font-label font-bold uppercase tracking-widest hover:brightness-110 transition-all scale-105 active:scale-100 shadow-2xl">
+                        Estimer mon bien gratuitement
+                    </button>
+<button class="w-full md:w-auto border border-outline-variant text-on-background px-12 py-5 rounded-md font-label font-bold uppercase tracking-widest hover:bg-white/5 transition-all">
+                        Nous appeler
+                    </button>
+</div>
+<p class="mt-12 text-on-surface-variant font-light">Rejoignez l'élite de la location saisonnière sur la Côte d'Azur.</p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="relative bg-[#0b1326] w-full py-20 px-12 border-t border-[#171f33]">
+<div class="absolute inset-0 z-0 overflow-hidden opacity-10">
+<img class="w-full h-full object-cover grayscale" data-alt="Distant night view of a glowing Mediterranean coastal city with city lights reflecting in the dark sea water" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApL-r9OLTQzb8sZwkmrunzvK6GnKAEuvJSuEejOYqOrbYQ03YZ_QUn1SQLMr2_ke0vgX4nqRMrB2eEu3p0w2K47Gh2Uu_Iv1gszCcP_ER-PmVDkzmGY98St_c9RHHANvKfDaqPxVDTO0q0rj7HNz7Xi0Zl5zuxsQJXC-HIuO4HrEH3WRRd_EDUuWa_GsRr8b_UxDd2-4AcFwauOdYE3Z68dum-CoF_EoCD8o6edNfY0nKDH4kj_ndO-T834Zu9InZS_tbVlbWUoD8">
+</div>
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-4 gap-12 w-full max-w-[1440px] mx-auto">
+<div class="col-span-1 md:col-span-2">
+<div class="text-[#e9c176] font-serif font-bold text-3xl mb-6">Signature Riviera</div>
+<p class="font-['Manrope'] text-sm tracking-wide text-slate-400 max-w-sm leading-relaxed">
+                    L'excellence de la gestion locative saisonnière sur toute la Côte d'Azur. De Saint-Tropez à Monaco.
+                </p>
+</div>
+<div class="flex flex-col space-y-4">
+<p class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e9c176] mb-4">Navigation</p>
+<a class="text-slate-600 hover:text-slate-300 transition-colors underline underline-offset-8" href="#">Dashboard</a>
+<a class="text-slate-600 hover:text-slate-300 transition-colors underline underline-offset-8" href="#">Services</a>
+<a class="text-slate-600 hover:text-slate-300 transition-colors underline underline-offset-8" href="#">Partners</a>
+</div>
+<div class="flex flex-col space-y-4">
+<p class="font-['Manrope'] text-xs tracking-widest uppercase text-[#e9c176] mb-4">Informations</p>
+<a class="text-slate-600 hover:text-slate-300 transition-colors underline underline-offset-8" href="#">Privacy Policy</a>
+<a class="text-slate-600 hover:text-slate-300 transition-colors underline underline-offset-8" href="#">Terms of Service</a>
+<a class="text-slate-600 hover:text-slate-300 transition-colors underline underline-offset-8" href="#">Local Partners</a>
+<a class="text-slate-600 hover:text-slate-300 transition-colors underline underline-offset-8" href="#">Press Kit</a>
+</div>
+</div>
+<div class="relative z-10 mt-20 pt-8 border-t border-[#171f33]/30 flex flex-col md:flex-row justify-between items-center w-full max-w-[1440px] mx-auto opacity-80">
+<p class="font-['Manrope'] text-xs tracking-widest uppercase text-slate-600">
+                © 2024 Signature Riviera. Excellence on the Côte d’Azur.
+            </p>
+<div class="flex space-x-6 mt-6 md:mt-0">
+<span class="material-symbols-outlined text-slate-500 cursor-pointer hover:text-[#adc7f7]" data-icon="share">share</span>
+<span class="material-symbols-outlined text-slate-500 cursor-pointer hover:text-[#adc7f7]" data-icon="public">public</span>
+</div>
+</div>
+</footer>
+
+
+</body></html>
