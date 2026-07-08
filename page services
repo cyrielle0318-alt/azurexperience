@@ -1,0 +1,406 @@
+<!DOCTYPE html><html class="dark" lang="fr"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Nos Propriétés | L’Horizon Bleu</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@200;300;400;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed": "#d6e3ff",
+              "secondary-container": "#3d4759",
+              "secondary": "#bdc7dc",
+              "tertiary-container": "#231700",
+              "on-primary-container": "#6983ae",
+              "on-background": "#dae2fd",
+              "secondary-fixed-dim": "#bdc7dc",
+              "tertiary-fixed": "#ffdea5",
+              "surface-variant": "#2d3449",
+              "on-error-container": "#ffdad6",
+              "on-tertiary-container": "#9e7d3a",
+              "on-secondary-fixed-variant": "#3d4759",
+              "inverse-primary": "#455f88",
+              "outline": "#8f9097",
+              "on-secondary-fixed": "#121c2c",
+              "error": "#ffb4ab",
+              "tertiary-fixed-dim": "#e9c176",
+              "outline-variant": "#44474d",
+              "on-surface": "#dae2fd",
+              "surface-container-lowest": "#060e20",
+              "surface-bright": "#31394d",
+              "inverse-surface": "#dae2fd",
+              "surface-container": "#171f33",
+              "on-tertiary": "#412d00",
+              "surface-tint": "#adc7f7",
+              "primary": "#adc7f7",
+              "error-container": "#93000a",
+              "primary-container": "#001938",
+              "on-secondary": "#273141",
+              "tertiary": "#e9c176",
+              "surface-container-highest": "#2d3449",
+              "on-primary-fixed-variant": "#2d476f",
+              "secondary-fixed": "#d9e3f9",
+              "inverse-on-surface": "#283044",
+              "surface-container-high": "#222a3d",
+              "surface-dim": "#0b1326",
+              "primary-fixed-dim": "#adc7f7",
+              "on-primary-fixed": "#001b3c",
+              "on-tertiary-fixed-variant": "#5d4201",
+              "on-surface-variant": "#c5c6cd",
+              "surface": "#0b1326",
+              "on-secondary-container": "#abb5cb",
+              "on-tertiary-fixed": "#261900",
+              "on-primary": "#133057",
+              "on-error": "#690005",
+              "surface-container-low": "#131b2e",
+              "background": "#0b1326"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #0b1326;
+            color: #dae2fd;
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-primary/30">
+<!-- Barre de Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-slate-950/60 backdrop-blur-xl shadow-2xl shadow-slate-950/20">
+<div class="flex justify-between items-center px-10 py-6 w-full max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif italic tracking-tighter text-blue-100">
+            Azur Experience &nbsp; &nbsp; &nbsp; &nbsp;</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-serif tracking-wide uppercase text-sm text-slate-400 hover:text-blue-100 transition-colors" href="#">Accueil</a>
+<a class="font-serif tracking-wide uppercase text-sm text-slate-400 hover:text-blue-100 transition-colors" href="#">Services</a>
+<a class="font-serif tracking-wide uppercase text-sm text-blue-200 border-b border-blue-200/50 pb-1" href="#">Propriétés</a>
+<a class="font-serif tracking-wide uppercase text-sm text-slate-400 hover:text-blue-100 transition-colors" href="#">Partenaires</a>
+<a class="font-serif tracking-wide uppercase text-sm text-slate-400 hover:text-blue-100 transition-colors" href="#">Conciergerie</a>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-blue-200 cursor-pointer hover:scale-105 transition-transform" data-icon="account_circle">account_circle</span>
+<span class="material-symbols-outlined text-blue-200 cursor-pointer hover:scale-105 transition-transform" data-icon="menu">menu</span>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-20">
+<!-- Section Héros -->
+<header class="px-10 mb-20 max-w-screen-2xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div class="max-w-2xl">
+<h1 class="font-headline text-5xl md:text-7xl lg:text-8xl tracking-tight leading-none mb-6">
+                    La <span class="italic text-primary">Collection</span>
+</h1>
+<p class="text-on-surface-variant font-light text-lg leading-relaxed max-w-lg">
+                    Une sélection rigoureuse des domaines les plus prestigieux de la Côte d'Azur. Des villas en bord de falaise aux penthouses modernistes au cœur de Nice.
+                </p>
+</div>
+<div class="flex flex-col items-end gap-2">
+<span class="text-tertiary font-label text-xs uppercase tracking-[0.3em]">Éditée par nos spécialistes</span>
+<div class="h-[1px] w-24 bg-tertiary/40"></div>
+</div>
+</div>
+</header>
+<!-- Barre de Filtre Éditoriale -->
+<section class="px-10 mb-16 max-w-screen-2xl mx-auto">
+<div class="bg-surface-container-low p-2 rounded-xl flex flex-col md:flex-row items-center gap-4 border border-outline-variant/10">
+<div class="flex-1 w-full grid grid-cols-2 md:grid-cols-4 gap-2">
+<button class="px-6 py-3 rounded-lg bg-surface-container-high text-primary font-label text-xs uppercase tracking-widest text-center border border-primary/20">Toutes destinations</button>
+<button class="px-6 py-3 rounded-lg hover:bg-surface-container-highest transition-colors text-on-surface-variant font-label text-xs uppercase tracking-widest text-center">Nice</button>
+<button class="px-6 py-3 rounded-lg hover:bg-surface-container-highest transition-colors text-on-surface-variant font-label text-xs uppercase tracking-widest text-center">Cannes</button>
+<button class="px-6 py-3 rounded-lg hover:bg-surface-container-highest transition-colors text-on-surface-variant font-label text-xs uppercase tracking-widest text-center">St-Tropez</button>
+</div>
+<div class="h-8 w-[1px] bg-outline-variant/30 hidden md:block"></div>
+<div class="w-full md:w-auto flex items-center gap-4 px-4">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="filter_list">filter_list</span>
+<select class="bg-transparent border-none text-on-surface font-label text-xs uppercase tracking-widest focus:ring-0 cursor-pointer">
+<option>Type de bien</option>
+<option>Villa</option>
+<option>Penthouse</option>
+<option>Domaine</option>
+</select>
+</div>
+</div>
+</section>
+<!-- Grille de Propriétés -->
+<section class="px-10 max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-20">
+<!-- Carte Propriété 1 -->
+<article class="group relative">
+<div class="aspect-[4/5] overflow-hidden rounded-xl bg-surface-container relative mb-6">
+<img alt="Villa Azure" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Modern white luxury villa with infinity pool overlooking the Mediterranean sea at sunset with dramatic warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDM3prEOsYS5YY0uapTl4TpjanYr7cDKUYGwa_aIOvue4evVM4grBgwLbOy-Csj4Yxmg-PLM2uzzr5DPw9dmU7odlmhcjjV_yImkv5ZRsYccnJJJGPhyULFpR7OZsnlM-jmqNM42sdF5guDeH8tjx-bu7kkmefyWEN-AMjda1-TK3uxGg8g4qOiC__p2mBrv928hk0kvQ4A7EtT9xMvcRLqSLHgPMJfrDsWTrhADhBhHK9X7xrM58taRj5tH_86EyXj_RvxkcsPh3jk">
+<div class="absolute top-6 left-6">
+<span class="bg-slate-950/40 backdrop-blur-md px-4 py-1 rounded-full text-[10px] uppercase tracking-[0.2em] text-blue-100 border border-white/10">Exclusivité</span>
+</div>
+</div>
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline text-2xl mb-1 group-hover:text-primary transition-colors">Villa Azure</h3>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+<span class="text-xs uppercase tracking-widest">Saint-Jean-Cap-Ferrat</span>
+</div>
+</div>
+<div class="text-right">
+<span class="block font-headline text-lg text-tertiary">4 500 €</span>
+<span class="text-[10px] uppercase tracking-tighter text-on-surface-variant">par nuit</span>
+</div>
+</div>
+<div class="flex gap-6 mb-8 py-4 border-y border-outline-variant/10">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-primary" data-icon="bed">bed</span>
+<span class="text-xs font-light">6 Ch.</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-primary" data-icon="bathtub">bathtub</span>
+<span class="text-xs font-light">5 Sdb.</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-primary" data-icon="pool">pool</span>
+<span class="text-xs font-light">Infinity</span>
+</div>
+</div>
+<a class="block w-full text-center py-4 bg-gradient-to-r from-primary to-on-primary-container text-on-primary font-label text-xs uppercase tracking-[0.2em] rounded-lg transition-all hover:shadow-lg hover:shadow-primary/20" href="#">
+                    Réserver sur Airbnb
+                </a>
+</article>
+<!-- Carte Propriété 2 -->
+<article class="group relative mt-12 md:mt-0">
+<div class="aspect-[4/5] overflow-hidden rounded-xl bg-surface-container relative mb-6">
+<img alt="Loft Garibaldi" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Sleek modern penthouse interior in Nice with floor to ceiling windows showing city lights at dusk and minimalist furniture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAa6bTz8ZoFMo5sK6LVE3ZWyX-TAq8IQXlZdA1Z29HCMdDXelSLNgmFrGlb3myjV_KmTDnss_Bo5y21fSR6tW1fL1U9ZWJCzcfLXEwgFjqyHZd98i3WI_GohuWa1DZTsqjcIfLYCVfqXkMAh3mlj6NbYvdy8QFyzEG-wD15etF_7w6YodFF8rZWXBQwIKzInKTjyBQ5LLYkP9JyKEC4toYD4RTv-Uo09vOwl_GzkXg4M-2Cmwg49EqkXuybWmUwFyFLCy2oXazMNkuV">
+<div class="absolute top-6 left-6">
+<span class="bg-slate-950/40 backdrop-blur-md px-4 py-1 rounded-full text-[10px] uppercase tracking-[0.2em] text-blue-100 border border-white/10">Nouveauté</span>
+</div>
+</div>
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline text-2xl mb-1 group-hover:text-primary transition-colors">Loft Garibaldi</h3>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+<span class="text-xs uppercase tracking-widest">Vieux Nice</span>
+</div>
+</div>
+<div class="text-right">
+<span class="block font-headline text-lg text-tertiary">1 200 €</span>
+<span class="text-[10px] uppercase tracking-tighter text-on-surface-variant">par nuit</span>
+</div>
+</div>
+<div class="flex gap-6 mb-8 py-4 border-y border-outline-variant/10">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-primary" data-icon="bed">bed</span>
+<span class="text-xs font-light">2 Ch.</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-primary" data-icon="bathtub">bathtub</span>
+<span class="text-xs font-light">2 Sdb.</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-primary" data-icon="deck">deck</span>
+<span class="text-xs font-light">Rooftop</span>
+</div>
+</div>
+<a class="block w-full text-center py-4 bg-gradient-to-r from-primary to-on-primary-container text-on-primary font-label text-xs uppercase tracking-[0.2em] rounded-lg transition-all hover:shadow-lg hover:shadow-primary/20" href="#">
+                    Réserver sur Airbnb
+                </a>
+</article>
+<!-- Carte Propriété 3 -->
+<article class="group relative">
+<div class="aspect-[4/5] overflow-hidden rounded-xl bg-surface-container relative mb-6">
+<img alt="Maison des Palmes" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Traditional Provencal style mansion with stone walls and blue shutters surrounded by olive trees and lavender fields" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtFJX3Flo4pdZchlQW8AcXcXqRLhQB_FfNmXHrjDYzM42_2t6LiQ2e3Lx9ZVazgMLONBWbwDEc-Y_UhnIdhMqFSCwcJX3vJW3DnFAcfO1FV2wnmbWRon_UOD39rmhMbhpJStgvmGTrJ3ZfWw-hPnkKeZ-jkBhdFYig-65x3KaYveSsGjU8YRdqTdHsAnXdSJFowu9-MtRW7twG-VQeAYE8tiSMpE5w30Faqmgyt3kmhf6zIecc9kuDUFmMVQ55zHpLiNwrkUw4nrDs">
+</div>
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline text-2xl mb-1 group-hover:text-primary transition-colors">Maison des Palmes</h3>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+<span class="text-xs uppercase tracking-widest">Saint-Tropez</span>
+</div>
+</div>
+<div class="text-right">
+<span class="block font-headline text-lg text-tertiary">3 800 €</span>
+<span class="text-[10px] uppercase tracking-tighter text-on-surface-variant">par nuit</span>
+</div>
+</div>
+<div class="flex gap-6 mb-8 py-4 border-y border-outline-variant/10">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-primary" data-icon="bed">bed</span>
+<span class="text-xs font-light">5 Ch.</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-primary" data-icon="bathtub">bathtub</span>
+<span class="text-xs font-light">4 Sdb.</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-primary" data-icon="local_parking">local_parking</span>
+<span class="text-xs font-light">Privé</span>
+</div>
+</div>
+<a class="block w-full text-center py-4 bg-gradient-to-r from-primary to-on-primary-container text-on-primary font-label text-xs uppercase tracking-[0.2em] rounded-lg transition-all hover:shadow-lg hover:shadow-primary/20" href="#">
+                    Réserver sur Airbnb
+                </a>
+</article>
+<!-- Carte Propriété 4 -->
+<article class="group relative md:mt-12">
+<div class="aspect-[4/5] overflow-hidden rounded-xl bg-surface-container relative mb-6">
+<img alt="Cannes Belvedere" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Luxury glass mansion on a hill in Cannes at twilight with pool reflecting the dark blue sky and glowing warm interior lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXu2lGvbCZStrGOfuNDI8LNP0ZO4LPjYzsiGLNETGI_QZ0VExQXmYMbqunfyfiJpVGCX1FGrT25jEdVyCf2YJfm9rwQ6qeTMTXkjx1LG7ji8NCC-PS4BNidBmUox00e32V7Uw3htQ9PmJmYVuON8q-ggGZhg9d5xPRtmXBYHmAnbtEEJgO41t9hFIrtfkYogcB5DT5fLr8VMnrsFaJD-uxRUjW-JB_CGCPCcPVHP70YkJYCfMBsH6pDyphkUJbd-ukB2t8GZDz48t2">
+</div>
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline text-2xl mb-1 group-hover:text-primary transition-colors">Cannes Belvedere</h3>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+<span class="text-xs uppercase tracking-widest">La Croisette</span>
+</div>
+</div>
+<div class="text-right">
+<span class="block font-headline text-lg text-tertiary">5 200 €</span>
+<span class="text-[10px] uppercase tracking-tighter text-on-surface-variant">par nuit</span>
+</div>
+</div>
+<div class="flex gap-6 mb-8 py-4 border-y border-outline-variant/10">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-primary" data-icon="bed">bed</span>
+<span class="text-xs font-light">7 Ch.</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-primary" data-icon="bathtub">bathtub</span>
+<span class="text-xs font-light">7 Sdb.</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-primary" data-icon="wine_bar">wine_bar</span>
+<span class="text-xs font-light">Cave</span>
+</div>
+</div>
+<a class="block w-full text-center py-4 bg-gradient-to-r from-primary to-on-primary-container text-on-primary font-label text-xs uppercase tracking-[0.2em] rounded-lg transition-all hover:shadow-lg hover:shadow-primary/20" href="#">
+                    Réserver sur Airbnb
+                </a>
+</article>
+<!-- Carte Propriété 5 -->
+<article class="group relative">
+<div class="aspect-[4/5] overflow-hidden rounded-xl bg-surface-container relative mb-6">
+<img alt="Eze Sanctuary" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Minimalist concrete luxury house built into a cliff face in Eze with expansive views of the French Riviera coast" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZOMzVcovCNk9q7Om-g7sMFBSJNBz9xF67RL9ZQItXxwAWPcrDTKOQ4593OrshOppbSxbFIII1uA47q-BLLGEJBedoG035xJ5aOg5ToZdCzasQ3TPQG7XgVgRcKrDKY4hw3dgfqR94RjPqr0fWPJ_jgWKSBSfjPXp43YZ33s0fyXciySKmm_cLXfQFN7sDLeH463gYD9l3zUe5laatTAGXaKvjwW_sDt1TKqIRNUEWDthSGDxDVHVUvTO2_A0SG66hPJ3XDW_3IaFx">
+</div>
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline text-2xl mb-1 group-hover:text-primary transition-colors">Eze Sanctuary</h3>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+<span class="text-xs uppercase tracking-widest">Village d'Èze</span>
+</div>
+</div>
+<div class="text-right">
+<span class="block font-headline text-lg text-tertiary">2 900 €</span>
+<span class="text-[10px] uppercase tracking-tighter text-on-surface-variant">par nuit</span>
+</div>
+</div>
+<div class="flex gap-6 mb-8 py-4 border-y border-outline-variant/10">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-primary" data-icon="bed">bed</span>
+<span class="text-xs font-light">4 Ch.</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-primary" data-icon="bathtub">bathtub</span>
+<span class="text-xs font-light">4 Sdb.</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-primary" data-icon="spa">spa</span>
+<span class="text-xs font-light">Spa</span>
+</div>
+</div>
+<a class="block w-full text-center py-4 bg-gradient-to-r from-primary to-on-primary-container text-on-primary font-label text-xs uppercase tracking-[0.2em] rounded-lg transition-all hover:shadow-lg hover:shadow-primary/20" href="#">
+                    Réserver sur Airbnb
+                </a>
+</article>
+<!-- Carte Propriété 6 -->
+<article class="group relative mt-12 md:mt-0 lg:mt-12">
+<div class="aspect-[4/5] overflow-hidden rounded-xl bg-surface-container relative mb-6">
+<img alt="Monaco Horizon" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-rise luxury apartment balcony view of Monaco harbour at night with bright yachts and neon city lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7pzysY0Ftz8Ug9VHCvhCdJvJdBwOD06Qck6DxbWxdqmLf4-Un_fskhEFc2Eb-W9mrcDBtXSvZ5jLjsHGEWKWI1PMUwsWzKlXn9ORy-l8ZXAmelWTNi7kXthvqwNI31zhbgzg3QNOQe42ErCFQFuskpJ7aNFIaiSBLp-Ww8I5B7j0LCbsDey2YEEi-4yRqhTviAKrVxcT2pfV2hUKXKsobKoJEMUaL6Npk_yDDg9RRo610gFbENN5eoTRvrwLrsBudQRgMEpWBLEik">
+<div class="absolute top-6 left-6">
+<span class="bg-slate-950/40 backdrop-blur-md px-4 py-1 rounded-full text-[10px] uppercase tracking-[0.2em] text-blue-100 border border-white/10">Service Signature</span>
+</div>
+</div>
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline text-2xl mb-1 group-hover:text-primary transition-colors">Monaco Horizon</h3>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+<span class="text-xs uppercase tracking-widest">Monte Carlo</span>
+</div>
+</div>
+<div class="text-right">
+<span class="block font-headline text-lg text-tertiary">6 500 €</span>
+<span class="text-[10px] uppercase tracking-tighter text-on-surface-variant">par nuit</span>
+</div>
+</div>
+<div class="flex gap-6 mb-8 py-4 border-y border-outline-variant/10">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-primary" data-icon="bed">bed</span>
+<span class="text-xs font-light">3 Ch.</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-primary" data-icon="bathtub">bathtub</span>
+<span class="text-xs font-light">3 Sdb.</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-primary" data-icon="visibility">visibility</span>
+<span class="text-xs font-light">Vue Port</span>
+</div>
+</div>
+<a class="block w-full text-center py-4 bg-gradient-to-r from-primary to-on-primary-container text-on-primary font-label text-xs uppercase tracking-[0.2em] rounded-lg transition-all hover:shadow-lg hover:shadow-primary/20" href="#">
+                    Réserver sur Airbnb
+                </a>
+</article>
+</div>
+</section>
+<!-- Newsletter / Appel à l'action -->
+<section class="mt-40 px-10 max-w-screen-2xl mx-auto">
+<div class="relative py-24 rounded-2xl overflow-hidden text-center bg-surface-container-high">
+<div class="absolute inset-0 opacity-10">
+<div class="w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-2xl mx-auto px-6">
+<h2 class="font-headline text-4xl mb-6 italic text-blue-100 tracking-tight">Accédez à l'Inaccessible</h2>
+<p class="text-on-surface-variant font-light mb-10 leading-relaxed">
+                    Rejoignez notre liste privée pour recevoir un accès privilégié aux nouveaux domaines de notre portfolio et à nos expériences de conciergerie sur mesure avant leur publication.
+                </p>
+<form class="flex flex-col sm:flex-row gap-4">
+<input class="flex-1 bg-surface-container-lowest border border-outline-variant/30 rounded-lg px-6 py-4 text-sm focus:ring-1 focus:ring-primary outline-none transition-all placeholder:text-slate-600" placeholder="Votre adresse email" type="email">
+<button class="bg-tertiary text-on-tertiary px-8 py-4 rounded-lg font-label text-xs uppercase tracking-widest font-semibold hover:bg-tertiary-fixed-dim transition-colors">Rejoindre le Registre</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Pied de page -->
+<footer class="bg-slate-950 w-full py-20 px-10 border-t border-slate-800/30">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 w-full max-w-screen-2xl mx-auto">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="text-xl font-serif text-slate-100">L’Horizon Bleu</div>
+<p class="font-sans light tracking-widest text-xs uppercase text-slate-500">© 2024 L’Horizon Bleu. Une expérience de conciergerie éditoriale.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-sans light tracking-widest text-xs uppercase text-slate-500 hover:text-slate-200 transition-colors" href="#">Politique de Confidentialité</a>
+<a class="font-sans light tracking-widest text-xs uppercase text-slate-500 hover:text-slate-200 transition-colors" href="#">Conditions Générales</a>
+<a class="font-sans light tracking-widest text-xs uppercase text-slate-500 hover:text-slate-200 transition-colors" href="#">Dossier de Presse</a>
+<a class="font-sans light tracking-widest text-xs uppercase text-amber-200 font-semibold" href="#">Contacter nos Spécialistes</a>
+</div>
+</div>
+</footer>
+
+
+</body></html>
